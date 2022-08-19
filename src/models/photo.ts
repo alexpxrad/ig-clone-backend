@@ -4,4 +4,6 @@ export interface Photo {
     likes?: number;
     comments?: string[];
     description?: string;
+
+    
 }
