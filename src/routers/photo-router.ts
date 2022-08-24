@@ -22,6 +22,8 @@ photoRouter.post('/', async (req: Request, res: Response) => {
     res.status(201).send({ insertedId })
 });
 
+
+//PATCH request to /photo/{PHOTO_ID} with a body of { likes: 1}
 photoRouter.patch('/:id', async (req: Request, res: Response) => {
     const {id } = req.params
     const { likes } = req.body
